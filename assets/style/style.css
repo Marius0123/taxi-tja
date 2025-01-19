@@ -166,15 +166,17 @@ header{
     color: var(--white);
 }
 
-.sticky_header_container[fade='1'] {
-    animation: header_fade_animation 1.5 ease-in;
+.sticky_header_container {
+    animation: 300ms ease-in-out 0s normal none 1 running header_fade_animation;
 }
 
 @keyframes header_fade_animation {
-    from{
-        transform: translateY(-163px);
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-    to {
-        transform: translateY(0);
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
