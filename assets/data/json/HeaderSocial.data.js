@@ -1,4 +1,4 @@
-export const HeaderSocial = [
+export const HeaderSocialData = [
     {
         name: 'facebook',
         icon: `

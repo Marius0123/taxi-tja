@@ -1,26 +1,26 @@
-export const HeaderNav = [
+export const HeaderNavData = [
     {
         name: "Home",
-        link: "/",
+        link: "./",
     },
     {
         name: "About us",
-        link: "/about.html",
+        link: "./about.html",
     },
     {
         name: "Our taxi",
-        link: "/our-taxi.html",
+        link: "./our-taxi.html",
     },
     {
         name: "Pricing",
-        link: "/pricing.html",
+        link: "./pricing.html",
     },
     {
         name: "FAQ",
-        link: "/faq.html",
+        link: "./faq.html",
     },
     {
         name: "Contact us",
-        link: "/contact.html",
+        link: "./contact.html",
     },
 ];

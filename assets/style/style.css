@@ -7,6 +7,7 @@
     --grey: #636363;
     --orange: #ffb61a;
     --black: #000;
+    --dark-grey: #141b22;
     --small-font-size: 15px;
     --medium-font-size: 18px;
     --white: #fff;
@@ -26,7 +27,7 @@ a{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* color: var(--white); */
+    color: var(--dark-grey);
     font-family: "Poppins", serif;
     font-weight: var(--normal-font-weight);
     font-style: normal;
@@ -39,13 +40,15 @@ a{
 
 body{
     /* Just for developement */
-    background-color: black;
+    background-color: var(--black);
+    /* Just for developement */
+    height: 200vh;
 }
 
 .header_container {
     height: var(--header-container-height);
     /* Just for developement */
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 .header_content_wrapper{
@@ -78,6 +81,9 @@ body{
     gap: calc(var(--gap)/2);
     align-items: center;
     font-size: var(--small-font-size);
+}
+
+.header_content_block_row_one_contacts_btn p{
     color: var(--white);
 }
 
@@ -103,7 +109,7 @@ body{
 }
 
 .header_content_social_icon_btn svg {
-    fill: var(--black);
+    fill: var(--dark-grey);
     height: calc(var(--gap)/2);
     width: calc(var(--gap)/2);
 }
@@ -134,4 +140,8 @@ body{
     font-size: var(--normal-font-weight);
     text-transform: uppercase;
     font-weight: var(--bold-font-weight);
+}
+
+.sticky_header_container {
+    background-color: var(--dark-grey);
 }
