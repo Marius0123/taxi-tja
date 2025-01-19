@@ -1,6 +1,6 @@
 import { HeaderLogo } from "../../../elements/header/HeaderLogo.js";
-import { HeaderNav } from "../../../elements/header/HeaderNav.js";
+import { StickyHeaderNav } from "./StickyHeaderNav.js";
 
-const RowContent = `${HeaderLogo} ${HeaderNav}`
+const RowContent = `${HeaderLogo} ${StickyHeaderNav}`;
 
 export const StickyHeaderRow = RowContent;
