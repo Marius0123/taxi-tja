@@ -1,0 +1,116 @@
+
+/* HEADER */
+header{
+    top: 0;
+}
+
+/* Relative HEADER */
+.header_container, .sticky_header_container {
+    height: var(--header-container-height);
+    /* Just for developement */
+    /* background-color: cadetblue; */
+}
+
+.header_content_wrapper{
+    padding: calc(var(--gap)/1.6) 0 0;
+}
+
+.header_content_block {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap)/1.6);
+}
+
+.header_content_block_row_one, .header_content_block_row_two, .header_content_block_row_one_contacts, .header_content_block_row_one_contacts_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_content_block_row_one_contacts {
+    gap: calc(var(--gap)/2);
+    align-items: center;
+}
+
+.header_content_block_row_one_contacts_devidor {
+    width: 1px;
+    height: 100%;
+    background-color: var(--grey);
+}
+
+.header_content_block_row_one_contacts_btn {
+    gap: calc(var(--gap)/2);
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.header_content_block_row_one_contacts_btn p{
+    color: var(--white);
+}
+
+.header_content_block_row_one_contacts_btn svg{
+    fill: var(--orange);
+    height: calc(var(--gap)/1.5);
+    width: calc(var(--gap)/1.5);
+}
+
+.header_content_block_row_one_social {
+    display: flex;
+    gap: calc(var(--gap)/1.5);
+}
+
+.header_content_block_row_two {
+    background: var(--white);
+    align-items: center;
+}
+
+.header_logo_container {
+    background: var(--orange);
+    padding: calc(var(--gap)/2);
+}
+
+.header_logo_container img{
+    width: 180px;
+
+}
+
+.header_nav_list{
+    padding: 0 calc(var(--gap)/2);
+    display: flex;
+    gap: calc(var(--gap));
+}
+
+.header_nav_list_item_name p{
+    font-size: var(--normal-font-weight);
+    text-transform: uppercase;
+    font-weight: var(--bold-font-weight);
+}
+
+/* Sticky HEADER */
+.sticky_header_content_wrapper {
+    background-color: var(--dark-grey);
+}
+
+.sticky_header_content_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky_header_nav_list p{
+    color: var(--white);
+}
+
+.sticky_header_container {
+    animation: 300ms ease-in-out 0s normal none 1 running header_fade_animation;
+}
+
+@keyframes header_fade_animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

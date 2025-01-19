@@ -4,6 +4,7 @@
 <ul>
     <li>Acest proiect este divizat in componente javascript (similar cu React.js)</li>
     <li>Denumirile tuturor componentelor, precum și a fișierelor cu date (mapa 'json') sunt scrise cu literă mare</li>
+    <li>Denumirile tuturor componentelor trebuie să coincidă cu denumirea fișierelor în care se află</li>
     <li>La stilizare există o listă de clase globale cu stiluri predefinite (vor mai apărea pe parcursul dezvoltării proiectlui): 
         <ul>
             <li>content_block (blocul în care se plasează conținutul unei secțiuni; are lățime stabilită)</li>

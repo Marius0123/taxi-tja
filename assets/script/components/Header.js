@@ -1,7 +1,10 @@
 import {RelativeHeader} from './blocks/header/RelativeHeader.js';
 import { StickyHeader } from './blocks/header/StickyHeader.js';
 
+
 const header = document.querySelector("#header");
+
+document.querySelector('head').innerHTML += `<link rel="stylesheet" href="./assets/style/header.css"> `;
 
 const checkPoint = 170;
 let onPlace = 0;
