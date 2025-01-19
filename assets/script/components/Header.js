@@ -10,14 +10,16 @@ header.innerHTML = headerContent;
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    console.log(currentScroll);
+    //console.log(currentScroll);
     // console.info(onPlace);
     if(currentScroll > checkPoint && !onPlace){
         onPlace = 1;
         headerContent = StickyHeader;
         header.innerHTML = headerContent;
-        document.querySelector('.sticky_header_container').setAttribute('fade', onPlace);
         document.querySelector('header').style.position = "sticky";
+        if(currentScroll > checkPoint+10){
+            document.querySelector('#sticky_header_container').style.height = "auto";
+        }
         
         
     } else if(currentScroll < checkPoint){
