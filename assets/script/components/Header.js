@@ -3,8 +3,10 @@ import { StickyHeader } from './blocks/header/StickyHeader.js';
 
 
 const header = document.querySelector("#header");
+const pageType = document.querySelector("#pageType").value;
 
-document.querySelector('head').innerHTML += `<link rel="stylesheet" href="./assets/style/header.css"> `;
+
+document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/header.css"> `;
 
 const checkPoint = 170;
 let onPlace = 0;
