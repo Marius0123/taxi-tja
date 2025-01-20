@@ -83,6 +83,11 @@ header{
     font-size: var(--normal-font-weight);
     text-transform: uppercase;
     font-weight: var(--bold-font-weight);
+    transition: var(--transition-one);
+}
+
+.header_nav_list_item_name:hover p{
+    color: var(--orange);
 }
 
 /* Sticky HEADER */

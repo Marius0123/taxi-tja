@@ -5,9 +5,9 @@ const pageType = document.querySelector("#pageType").value;
 
 let FooterInnerNavMenuContent = ``;
 HeaderNavData.forEach((e)=>{
-    if (e.key = "home" || "about" || "faq" || "contact") {
+    if (e.key == "home" || e.key == "about" || e.key == "faq" || e.key == "contact") {
         const link = pageType != 'index' ? (e.link == './' ? '../' : e.link) : (e.link == './' ? './' : './pages/' + e.link);
-
+        // console.log(e.key);
         FooterInnerNavMenuContent += 
             `<div class="footer_nav_links_list_item">
                 <a href="${link}">

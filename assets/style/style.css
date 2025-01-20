@@ -17,6 +17,8 @@
     --white: #fff;
     --normal-font-weight: 400;
     --bold-font-weight: 600;
+    /* Transition: Text color to orange */
+    --transition-one: all .2s ease-out;
 }
 
 a, input, textarea {
@@ -37,6 +39,25 @@ a{
     font-style: normal;
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c48d14;
+}
+
+
+/* GLOBAL CLASSES */
 .content_block {
     max-width: var(--content-block-width);
     margin: auto;
@@ -57,6 +78,8 @@ a{
     height: calc(var(--gap)/2);
     width: calc(var(--gap)/2);
 }
+
+/* BODY */
 
 body{
     /* Just for developement */

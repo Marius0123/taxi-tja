@@ -100,7 +100,7 @@
 
 .footer_nav_links_list_item_content p {
     color: var(--light-grey);
-    transition: all .2s ease-out;
+    transition: var(--transition-one);
 }
 
 .footer_nav_links_list_item>a:hover .footer_nav_links_list_item_content p {
