@@ -10,9 +10,9 @@ export const HeaderNavData = [
         key: 'about',
     },
     {
-        name: "Our taxi",
-        link: "./our-taxi.html",
-        key: 'taxi',
+        name: "Our cars",
+        link: "./our-cars.html",
+        key: 'cars',
     },
     {
         name: "Pricing",
