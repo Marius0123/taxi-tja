@@ -5,7 +5,7 @@ import { FooterRowTwoContacts } from "./FooterRowTwoBlocks/FooterRowTwoContacts.
 
 const FooterRowTwoContent = 
             `<div class="footer_content_row_two">
-                <div class="footer_row_two_background_fader">
+                <div class="dark_fader">
                     <div class="footer_content_row_two_block content_block">
                         ${ FooterRowTwoAbout }
                         ${ FooterRowTwoInnerNav }

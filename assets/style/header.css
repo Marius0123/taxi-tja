@@ -1,7 +1,9 @@
 
 /* HEADER */
 header{
+    position: relative;
     top: 0;
+    z-index: 10;
 }
 
 /* Relative HEADER */

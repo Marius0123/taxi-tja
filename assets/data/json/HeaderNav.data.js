@@ -26,7 +26,7 @@ export const HeaderNavData = [
     },
     {
         name: "Contact us",
-        link: "./contact.html",
+        link: "./contacts.html",
         key: 'contact',
     },
 ];

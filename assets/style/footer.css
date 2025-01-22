@@ -37,14 +37,9 @@
     background-position: center;
 }
 
-.footer_row_two_background_fader{
-    background-color: #101010f0;
+footer .dark_fader {
+    background-color: var(--footer-dark-fader);
 }
-
-.footer_content_row_two_about_title, .nav_category_title, .footer_nav_links_list_item_content>p{
-    text-transform: capitalize;
-}
-
 
 .footer_content_row_two_block {
     padding: calc(var(--gap)*2.5) 0 calc(var(--gap)*2.5);
