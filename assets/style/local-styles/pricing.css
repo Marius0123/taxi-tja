@@ -1,0 +1,113 @@
+.pricing_block {
+    background-color: var(--dark-brown);
+    background: url('https://wpdemo.zcubethemes.com/citylink/wp-content/uploads/2024/05/price-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing_content {
+    display: flex;
+    gap: calc(var(--gap)*1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.princing_wrapper {
+    padding: calc(var(--gap)*3.5);
+}
+
+/* ALL CARDS */
+
+.pricing_card {
+    border: 1px solid var(--grey);
+    border-radius: var(--middle-border-radius);
+    padding: calc(var(--gap)*1.5) calc(var(--gap)*1.4);
+}
+
+.pricing_card_h_icon svg {
+    height: 65px;
+    fill: var(--orange);
+}
+
+.pricing_card_h_title{
+    font-size: var(--medium-sec-title-font-size);
+    color: var(--white);
+    font-weight: var(--regular-font-weight);
+    padding: calc(var(--gap)/4) 0;
+}
+
+.pricing_card_h_desc {
+    color: var(--white);
+    font-size: var(--small-font-size);
+    line-height: 1.8;
+}
+
+.pricing_card_b_list {
+    padding: calc(var(--gap)*1) 0 calc(var(--gap)*1.2);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap)/2.5);
+}
+
+.pricing_card_b_l_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing_card_b_l_item *{
+    color: var(--white);
+    font-size: var(--small-font-size);
+}
+
+.pricing_card_footer_btn {
+    border: 1px solid var(--orange);
+    width: 100%;
+}
+
+.pricing_card_footer_btn a{
+    width: 100%;
+}
+
+.pricing_card_footer_btn * {
+    color: var(--white);
+    fill: var(--white);
+}
+
+.pricing_card_footer_btn:hover {
+    background-color: var(--orange);
+}
+
+
+
+/* SECOND CARD */
+.pricing_card:nth-last-of-type(2) {
+    border: 1px solid var(--orange);
+    backdrop-filter: blur(0px);
+    background-color: var(--orange);
+}
+
+.pricing_card:nth-last-of-type(2) .pricing_card_h_icon svg {
+    fill: var(--black);
+}
+
+.pricing_card:nth-last-of-type(2) .pricing_card_h_title{
+    color: var(--black);
+}
+
+.pricing_card:nth-last-of-type(2) .pricing_card_h_desc {
+    color: var(--black);
+}
+
+.pricing_card:nth-last-of-type(2) .pricing_card_b_l_item *{
+    color: var(--black);
+}
+
+.pricing_card:nth-last-of-type(2) .pricing_card_footer_btn {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+}
+
+.pricing_card:nth-last-of-type(2) .pricing_card_footer_btn:hover {
+    background-color: var(--orange);
+}

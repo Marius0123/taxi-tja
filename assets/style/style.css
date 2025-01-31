@@ -13,11 +13,14 @@
 
     /* FONT-SIZES */
     --small-font-size: 14px;
-    --small-sec-title-font-size: 27px;
     --medium-font-size: 18px;
+
+    --small-sec-title-font-size: 27px;
+    --medium-sec-title-font-size: 36px;
 
     /* FONT WEIGHT */
     --normal-font-weight: 400;
+    --regular-font-weight: 500;
     --bold-font-weight: 600;
 
     /* COLORS */
@@ -36,20 +39,15 @@
     --page-head-dark-fader: #171717ae;
 
     /* TRANSITIONS */
+    /* Transition: Text color to orange */
     --transition-one: all .2s ease-out;
 
     /* BORDER RADIUS */
     --middle-border-radius: 10px;
-    
-    
-    
-    
-    /* Transition: Text color to orange */
 
 }
 
 /* GENERAL */
-
 a, input, textarea, button {
     all: unset;
 }
@@ -265,10 +263,11 @@ body{
 
 .page_head_container {
     background: url('../media/img/page-head.jpg');
-    background-position: 0 70%;
+    /* background-position: 0 70%; */
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .page_head_content {
@@ -324,60 +323,3 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pricing_block {
-    background-color: var(--dark-brown);
-    background: url('https://wpdemo.zcubethemes.com/citylink/wp-content/uploads/2024/05/price-bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.pricing_container {
-    /* backdrop-filter: blur(5px); */
-}
-
-.pricing_content {
-    display: flex;
-    gap: calc(var(--gap)*1);
-    align-items: center;
-    justify-content: space-between;
-}
-
-.princing_wrapper {
-    padding: calc(var(--gap)*3.5);
-}
-
-.pricing_card {
-    border: 1px solid var(--grey);
-    border-radius: var(--middle-border-radius);
-    backdrop-filter: blur(20px);
-    padding: calc(var(--gap)*1.5);
-}
-
-.pricing_card_h_icon svg {
-    height: 65px;
-    fill: var(--orange);
-}
-
-.pricing_card_h_title{
-    font-size: var(--medium-font-size);
-}
