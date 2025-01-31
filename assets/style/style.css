@@ -16,6 +16,7 @@
     --small-font-size: 14px;
     --medium-font-size: 18px;
     --white: #fff;
+    --dark-brown: #131211;
     --normal-font-weight: 400;
     --bold-font-weight: 600;
     /* Transition: Text color to orange */
@@ -221,6 +222,11 @@ input {
     fill: var(--black);
 }
 
+.orange_hover:hover{
+    transition: var(--transition-one);
+    color: var(--orange);
+}
+
 
 /* BODY */
 
@@ -241,7 +247,7 @@ body{
 }
 
 .page_head_container {
-    background: url('../media/img/head5.jpg');
+    background: url('../media/img/page-head.jpg');
     background-position: 0 70%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -316,3 +322,9 @@ body{
 
 
 
+
+
+
+.pricing_block {
+    background-color: var(--dark-brown);
+}

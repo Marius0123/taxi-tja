@@ -5,8 +5,8 @@ const {email, phone, address} = ContactsInfoData;
 let Emails = ``;
 email.data.forEach((e)=>{
     Emails+=
-        `<a href="mailto:${e}" class="underlined_link">
-            <p>${e}</p>
+        `<a href="mailto:${e}" class="underlined_link orange_hover">
+            <p class="orange_hover">${e}</p>
         </a>`;
 });
 

@@ -22,7 +22,12 @@
 }
 
 .footer_content_social_icon_btn.content_social_icon_btn {
-    background-color: var(--tansparent-white);
+    background-color: var(--grey);
+    transition: var(--transition-one);
+}
+
+.footer_content_social_icon_btn.content_social_icon_btn:hover {
+    background-color: var(--orange);
 }
 
 .footer_content_social_icon_btn.content_social_icon_btn svg{
