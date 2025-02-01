@@ -1,4 +1,4 @@
-import { SlidesData } from "../../../../../data/json/IndexHeroSlides.data.js";
+import { SlidesData } from '../../../../../../data/json/IndexHeroSlides.data.js';
 
 const SlideData = SlidesData[1];
 const {img, sTitle, title, titleSpan, desc, link} = SlideData;

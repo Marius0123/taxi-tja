@@ -353,11 +353,9 @@ body{
 .index_hero_s_slide {
     transition: var(--transition-one);
     position: relative;
-    /* background-image: url('../media/img/header-2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    animation: 1s ease-in-out 0s normal none 1 running slide_animation;
 }
+
 
 .index_hero_s_slide_bg {
     position: absolute;
@@ -409,6 +407,11 @@ body{
     cursor: pointer;
 }
 
+.slider_control_arrow:hover {
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+}
+
 #slider_ctrl_arrow_left {
     transform: translateX(-50px);
     opacity: 0;
@@ -431,7 +434,8 @@ body{
 .index_hero_s_slide_container {
     position: relative;
     z-index: 1;
-    height: 110vh;
+    min-height: 700px;
+    height: 108vh;
     max-height: 850px;
     /* background-color: #1c2630; */
     padding: calc(var(--header-container-height)*1.9) 0 0;
@@ -447,11 +451,19 @@ body{
     letter-spacing: 1.5px;
     font-size: var(--medium-font-size);
     padding: 0 0 10px;
+    opacity: 0;
+    animation: 1s ease-in-out .2s normal forwards 1 running title_animation;
 }
 
 .index_hero_s_slide_big_title, .index_hero_s_slide_desc {
     color: var(--white);
 }
+
+.index_hero_s_slide_big_title {
+    opacity: 0;
+    animation: 1s ease-in-out .2s normal forwards 1 running title_animation;
+}
+     
 
 .index_hero_s_slide_big_title span {
     position: relative;
@@ -474,5 +486,43 @@ body{
     font-weight: 300;
     font-size: var(--medium-font-size);
     padding: 20px 0;
+    opacity: 0;
+    animation: 1s ease-in-out .5s normal forwards 1 running title_animation;
 }
 
+.index_hero_s_slide_btn a {
+    opacity: 0;
+    animation: 1s ease-in-out .2s normal forwards 1 running btn_animation;
+}
+
+/* ANIMATIONS */
+@keyframes slide_animation {
+    0% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes title_animation {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes btn_animation {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
