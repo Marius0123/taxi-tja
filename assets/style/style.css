@@ -213,6 +213,13 @@ input {
 
     .section_title {
         padding: 5px 0 10px;
+        line-height: 1.35;
+    }
+
+    .smaller_section_title {
+        font-size: 23px;
+        color: var(--middle-dark-grey);
+        font-weight: 600;
     }
 
     .small_section_title {
@@ -224,6 +231,7 @@ input {
     .small_p {
         font-size: var(--small-font-size);
         color: var(--grey);
+        line-height: 1.9;
     }
 
     .medium_p {
@@ -263,7 +271,7 @@ input {
 
 body{
     /* Just for developement { */
-    background-color: #f9f9f9;
+    background-color: #fdfdfd;
     /* } Just for developement */
 }
 
@@ -665,12 +673,8 @@ body{
 }
 
 .about_section_data_column_header .section_title {
-    line-height: 1.4;
+    
     padding: 20px 0;
-}
-
-.about_section_data_column_body .small_p {
-    line-height: 1.8;
 }
 
 
@@ -792,4 +796,155 @@ body{
     line-height: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STEPS */
+.steps_block {
+    padding: calc(var(--gap)*1) 0 0;
+    position: relative;
+    z-index: 0;
+}
+
+.steps_sec_head {
+    max-width: 600px;
+    text-align: center;
+}
+
+.steps_content {
+    padding: var(--gap) 0 0;
+    display: flex;
+    gap: var(--gap);
+}
+
+.steps_card {
+    background-color: var(--white);
+    box-shadow: 0px 0px 42px 9px rgba(173, 173, 173, 0.18);
+    border-radius: 10px;
+    padding: var(--gap) var(--gap) calc(var(--gap)*1.2);
+    transition: 50ms linear;
+    margin: 0 0 calc(var(--gap)*4);
+}
+
+.steps_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(var(--gap)/1.5);
+}
+
+.steps_header_icon {
+    border: 2px dashed var(--middle-light-grey);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.steps_header_icon_wrapper svg{
+    height: 50px;
+}
+
+.steps_header_line {
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--middle-light-grey);
+}
+
+.steps_header_num {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--middle-light-grey);
+    transition: var(--transition-one);
+}
+
+.steps_card_body {
+    padding: calc(var(--gap)/1.5) 0;
+}
+
+.steps_card_body .smaller_section_title {
+    padding: 0 0 calc(var(--gap)/3);
+}
+
+.steps_card_footer .orange_btn {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    padding: 0;
+    height: 50px;
+    width: 180px;
+}
+
+.steps_card:hover{
+    border-bottom: 5px solid var(--orange);
+    margin: 0 0 calc((var(--gap)*4) - 5px);
+}
+
+.steps_card:hover .orange_btn{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.steps_card:hover .steps_header_num{
+    color: var(--orange);
+}
+
+.steps_card_footer .orange_btn:hover {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    padding: 0;
+    height: 50px;
+    width: 180px;
+}
 
