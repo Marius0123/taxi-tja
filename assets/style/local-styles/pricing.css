@@ -10,6 +10,17 @@
     padding: calc(var(--gap)*3.5);
 }
 
+.pricing_sec_head {
+    padding: calc(var(--gap)*3) 0 0;
+    margin:  0 auto calc(var(--gap)*-2);
+}
+
+.pricing_sec_head .section_title {
+    color: var(--white);
+}
+
+
+
 .pricing_content {
     display: flex;
     gap: calc(var(--gap)*1);

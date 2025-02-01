@@ -1,6 +1,6 @@
 <h1>Documentație pentru acest proiect</h1>
 <br>
-<h2>Reguli</h2>
+<h2>Principii de lucru</h2>
 <ul>
     <li>PENTRU A DESCHIDE ACEST PROIECT TREBUIE DE INSTALAT Live Server IN VS CODE SI DE DESCHIS CU EL</li>
     <li>Acest proiect este divizat in componente javascript (similar cu React.js)</li>

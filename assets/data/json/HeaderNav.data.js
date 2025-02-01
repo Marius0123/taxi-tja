@@ -31,6 +31,34 @@ export const HeaderNavData = [
     },
 ];
 
+export const FooterNavData = [
+    {
+        name: "Home",
+        link: "./",
+        key: 'home',
+    },
+    {
+        name: "About us",
+        link: "./about.html",
+        key: 'about',
+    },
+    {
+        name: "FAQ",
+        link: "./faq.html",
+        key: 'faq',
+    },
+    {
+        name: "Contact us",
+        link: "./contacts.html",
+        key: 'contact',
+    },
+    {
+        name: "Terms Of Service",
+        link: "./terms-of-service.html",
+        key: 'contact',
+    },
+];
+
 export const FooterNavDataOuterLinks = [
     {
         name: "Your Reliable Ride",
