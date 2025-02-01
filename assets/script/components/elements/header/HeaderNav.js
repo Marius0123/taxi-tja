@@ -2,7 +2,7 @@ import { HeaderNavData } from "../../../../data/json/HeaderNav.data.js";
 
 let HeaderNavContent = '';
 const pageType = document.querySelector("#pageType").value;
-console.log(pageType)
+console.log(pageType);
 HeaderNavData.forEach((e)=>{
 
     const link = pageType != 'index' ? (e.link == './' ? '../' : e.link) : (e.link == './' ? './' : './pages/' + e.link);
