@@ -1,8 +1,12 @@
+import { CompanyInfoData } from "../../../../data/json/CompanyInfo.data.js";
+
+const {logo} = CompanyInfoData;
+
 const LogoContent = 
             `<div class="header_logo">
                 <div class="header_logo_container">
                     <a href="">
-                        <img src="https://wpdemo.zcubethemes.com/citylink/wp-content/themes/citylink/inc/assets/images/logo.png" alt="">
+                        <img src="${logo[0]}" alt="">
                     </a>
                 </div>
             </div>`;
