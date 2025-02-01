@@ -15,12 +15,25 @@ function changeSlide(i){
     currentSlide = slidesArr[currentSlideIndex];
 }
 
+let changeSlideAuto = setInterval(()=>{
+    const isEnd = currentSlideIndex == slidesArr.length - 1;
+    isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+    console.log(currentSlideIndex);
+    indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
+}, 5000);
+
 leftArrow.addEventListener('click', ()=>{
     const isStart = currentSlideIndex == 0;
     isStart ? changeSlide(slidesArr.length - 1) : changeSlide(--currentSlideIndex);
     console.log(currentSlideIndex);
     indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
-
+    clearInterval(changeSlideAuto);
+    changeSlideAuto = setInterval(()=>{
+        const isEnd = currentSlideIndex == slidesArr.length - 1;
+        isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+        console.log(currentSlideIndex);
+        indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
+    }, 5000);
 });
 
 rigthArrow.addEventListener('click', ()=>{
@@ -28,4 +41,12 @@ rigthArrow.addEventListener('click', ()=>{
     isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
     console.log(currentSlideIndex);
     indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
+    clearInterval(changeSlideAuto);
+    changeSlideAuto = setInterval(()=>{
+        const isEnd = currentSlideIndex == slidesArr.length - 1;
+        isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+        console.log(currentSlideIndex);
+        indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
+    }, 5000);
 });
+

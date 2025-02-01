@@ -5,7 +5,7 @@ const {phone} = ContactsInfoData;
 
 let Phones = ``;
 phone.data.forEach(e => {
-    Phones+=`<a href="call:${e}"><p>${e}</p></a>`;
+    Phones+=`<a href="tel:${e}"><p>${e}</p></a>`;
 });
 
 const PhoneContent = 
