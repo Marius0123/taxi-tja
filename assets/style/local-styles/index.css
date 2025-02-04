@@ -176,3 +176,95 @@
         opacity: 1;
     }
 }
+
+
+.find_car_and_stats_wrapper {
+    background: url('https://images.pexels.com/photos/3105062/pexels-photo-3105062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.find_car_and_stats_content {
+    padding: calc(var(--gap)*4) 0;
+}
+
+.find_car_content {
+    display: flex;
+    align-items: center;
+}
+
+.find_car_img {
+    /* width: 100%; */
+    flex: 1;
+}
+
+.find_car_img img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.find_car_form_block {
+    /* width: 100%; */
+    padding: var(--gap);
+    flex: 1.1;
+    background: var(--orange);
+    border-radius: 13px;
+    height: fit-content;
+    margin-left: -5%;
+}
+
+.find_car_form_container {
+    padding: var(--gap) 0 calc(var(--gap)/1.5);
+}
+
+.find_car_form_container form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: calc(var(--gap)/2);
+}
+
+.find_car_form_container form button{
+    width: 100%;
+}
+
+
+
+
+.stats_container {
+    padding: calc(var(--gap) * 3) 0 0;
+}
+
+.stats_wrapper {
+    border: 5px solid var(--transparent-white-2);
+    border-radius: 10px;
+}
+
+.stats_content {
+    display: flex;
+    align-items: center;
+    padding: calc(var(--gap) * 1.5) calc(var(--gap) * 2.5);
+    justify-content: space-between;
+}
+
+.stats_card {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.stats_card_icon svg{
+    fill: var(--orange);
+    height: 50px;
+}
+
+.stats_card_data {
+    font-size: 50px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.stats_card_name {
+    color: var(--middle-grey);
+}

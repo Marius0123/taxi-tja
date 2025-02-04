@@ -6,6 +6,7 @@ import { PartnersSection } from "../About_page/PartnersSection.js";
 import { PricingCardsList } from "../Pricing_page/PricingCardsList.js";
 import { TestimonialSection } from "../About_page/TestimonialsSection.js";
 import { OurCarsSection } from "./OurCarsSection.js";
+import { FindCarAndStatsSection } from "./FindCarAndStatsSection.js";
 
 const main = document.querySelector("#main");
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/local-styles/pricing.css"> `;
@@ -16,7 +17,7 @@ document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${page
 main.innerHTML = 
             `${HeroSection}
             ${AboutSection}
-            // Find your car section
+            ${FindCarAndStatsSection}
             ${StepsSection}
             ${OurCarsSection}
             ${PricingCardsList}
