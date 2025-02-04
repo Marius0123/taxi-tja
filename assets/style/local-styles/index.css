@@ -268,3 +268,29 @@
 .stats_card_name {
     color: var(--middle-grey);
 }
+
+/* OUR CARS */
+.our_cars_index_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: calc(var(--gap)*1);
+    padding: calc(var(--gap)*1) 0 calc(var(--gap)*4);
+}
+
+.our_cars_index_col_text .small_p{
+    padding: calc(var(--gap)/5) 0 0;
+}
+
+.our_cars_index_col_t_footer {
+    padding: var(--gap) 0 0;
+}
+
+.our_cars_index_cars_content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.our_cars_index_cars_content .car_card{
+    width: 350px;
+}
