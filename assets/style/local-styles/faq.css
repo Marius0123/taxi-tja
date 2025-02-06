@@ -26,7 +26,7 @@
 }
 
 .faq_q_block_header_text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: var(--normal-font-weight);
     color: var(--grey);
 } 
@@ -43,7 +43,11 @@
 
 .faq_q_block_body {
     padding: calc(var(--gap) /1.5) 0;
-    transition: var(--transition-one);   
+    transition: var(--transition-one); 
+}
+
+.faq_q_block_body * {
+    color: var(--grey);
 }
 
 .faq_q_block:not(.active_faq_q) .faq_q_block_body{
