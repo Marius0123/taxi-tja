@@ -14,7 +14,6 @@
 }
 
 .about_section_data_column_header .section_title {
-    
     padding: 20px 0;
 }
 
@@ -128,9 +127,7 @@
 
 /* STEPS */
 .steps_block {
-    /* FOR DEVELOPMENT {*/
     padding: calc(var(--gap)*2) 0 0;
-    /* } FOR DEVELOPMENT */
     position: relative;
     z-index: 0;
 }
@@ -222,7 +219,7 @@
 /* TESTIMONIALS */
 .testionials_container {
     padding: calc(var(--gap)*3.5) 0 calc(var(--gap)*3);
-    background: url('https://wpdemo.zcubethemes.com/citylink/wp-content/uploads/2024/05/testimonial-bg.png');
+    background: url('../../media/img/testimonial-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

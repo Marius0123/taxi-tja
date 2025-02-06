@@ -1,0 +1,20 @@
+@media screen and (max-width: 1350px) {
+    .about_section_content{
+        grid-template-columns: 1fr .9fr;
+        gap: calc(var(--gap)*2);
+    }
+    .about_sec_img {
+        height: 300px;
+        width: 150px;
+        top: 9%;
+        left: -10%;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .about_section_photos_column_data_block {
+        bottom: 15%;
+        left: -15%;
+        padding: calc(var(--gap)*1) calc(var(--gap)*1.2);
+    }
+}

@@ -1,0 +1,32 @@
+@media screen and (max-width: 1350px) {
+    :root {
+        /* GAP */
+        --gap: 30px;
+
+        /* SIZES */
+        --header-container-height: 163px;
+        --content-block-width: 96%;
+        --page-head-height: 450px;
+        --input-heigth: 55px;
+        --get-car-add-height: 270px;
+    }
+
+    /* GLOBAL CLASSES */
+        /* BLOCKS */
+        .content_block {
+            max-width: var(--content-block-width);
+            margin: 0 2%;
+        }
+
+        .section_head {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .section_head *{
+            max-width: 70%;
+        }
+}

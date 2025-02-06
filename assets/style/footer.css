@@ -36,7 +36,7 @@
 
 .footer_content_row_two {
     border-top: solid 1px var(--middle-dark-grey);
-    background: url(https://images.pexels.com/photos/5834954/pexels-photo-5834954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background: url('https://images.pexels.com/photos/5834954/pexels-photo-5834954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
