@@ -17,7 +17,7 @@ FaqData.forEach((e, index)=>{
                     ${e.answer}
                 </div>
             </div>
-        </div>`
+        </div>`;
 });
 
 export const FaqList = List;
