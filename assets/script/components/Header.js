@@ -3,15 +3,21 @@ import { StickyHeader } from './blocks/header/StickyHeader.js';
 
 
 const header = document.querySelector("#header");
+const headerScript = document.querySelector("#headerScript");
+
 const pageType = document.querySelector("#pageType").value;
 
 
-document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/header.css"> `;
 
-const checkPoint = 170;
-let onPlace = 0;
+document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/header.css"> `;
+document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/header.css"> `;
+
+export const checkPoint = 170;
+export let onPlace = 0;
 let headerContent = RelativeHeader;
 header.innerHTML = headerContent;
+
+
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;

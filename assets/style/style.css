@@ -10,6 +10,7 @@
     --page-head-height: 450px;
     --input-heigth: 55px;
     --get-car-add-height: 270px;
+    --mobile-nav-top-margin: 100px;
 
     /* FONT-SIZES */
     --small-font-size: 14px;
@@ -440,7 +441,7 @@ body{
 
 
 
-
+/* FOR DEV ONLY */
 @media screen and (max-width: 1350px) {
     :root {
         /* GAP */
@@ -473,3 +474,25 @@ body{
             max-width: 70%;
         }
 }
+/* FOR DEV ONLY */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

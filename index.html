@@ -10,10 +10,14 @@
 </head>
 <body>
     <div class="body_container">
+        <div class="header_mobile_container header_mobile"></div>
         <header id="header"></header>
         <main id="main">
             <!-- <div class="some_block" style="height: 60vh; background-color: black; margin-top: -163px;"></div> -->
         </main>
+            <div class="some_block" style="height: 80vh; background-color: black; padding: 100px 0; position: relative;">
+                
+            </div>
         <footer id="footer"></footer>
     </div>
     <input type="hidden" value="index" id="pageType">
@@ -41,9 +45,16 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
     </script>
+
     <script type="module" src="./assets/script/components/Header.js"></script>
     <script type="module" src="./assets/script/components/blocks/Index_page/Home.js"></script>
     <script type="module" src="./assets/script/components/Footer.js"></script>
     <script type="module" src="./assets/script/actions/main.js"></script>
     <script type="module" src="./assets/script/actions/testimonials.js"></script>
+
+    <script type="module" src="./assets/script/actions/global/header.js"></script>
+
+
+
+    
 </html>

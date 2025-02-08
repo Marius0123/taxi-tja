@@ -15,7 +15,7 @@
         /* BLOCKS */
         .content_block {
             max-width: var(--content-block-width);
-            margin: 0 2%;
+            margin: auto;
         }
 
         .section_head {
@@ -29,4 +29,18 @@
         .section_head *{
             max-width: 70%;
         }
+}
+
+
+
+@media screen and (max-width: 980px) {
+    :root {
+        /* GAP */
+        --gap: 30px;
+
+        /* SIZES */
+        --content-block-width: 92%;
+    }
+
+    
 }

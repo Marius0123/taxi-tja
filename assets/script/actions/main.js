@@ -8,45 +8,44 @@ const indexHeroSliderWrapper = document.querySelector("#index_hero_slider_wrappe
 
 const slidesArr = [Slide1, Slide2];
 let currentSlideIndex = 1;
-let currentSlide = slidesArr[currentSlideIndex];
+const changeSlideIntervat = 9000;
 
-function changeSlide(i){
+function changeSlideIndex(i){
     currentSlideIndex = i;
-    currentSlide = slidesArr[currentSlideIndex];
 }
 
 let changeSlideAuto = setInterval(()=>{
     const isEnd = currentSlideIndex == slidesArr.length - 1;
-    isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+    isEnd ? changeSlideIndex(0) : changeSlideIndex(++currentSlideIndex);
     console.log(currentSlideIndex);
     indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
-}, 5000);
+}, changeSlideIntervat);
 
 leftArrow.addEventListener('click', ()=>{
     const isStart = currentSlideIndex == 0;
-    isStart ? changeSlide(slidesArr.length - 1) : changeSlide(--currentSlideIndex);
+    isStart ? changeSlideIndex(slidesArr.length - 1) : changeSlideIndex(--currentSlideIndex);
     console.log(currentSlideIndex);
     indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
     clearInterval(changeSlideAuto);
     changeSlideAuto = setInterval(()=>{
         const isEnd = currentSlideIndex == slidesArr.length - 1;
-        isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+        isEnd ? changeSlideIndex(0) : changeSlideIndex(++currentSlideIndex);
         console.log(currentSlideIndex);
         indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
-    }, 5000);
+    }, changeSlideIntervat);
 });
 
 rigthArrow.addEventListener('click', ()=>{
     const isEnd = currentSlideIndex == slidesArr.length - 1;
-    isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+    isEnd ? changeSlideIndex(0) : changeSlideIndex(++currentSlideIndex);
     console.log(currentSlideIndex);
     indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
     clearInterval(changeSlideAuto);
     changeSlideAuto = setInterval(()=>{
         const isEnd = currentSlideIndex == slidesArr.length - 1;
-        isEnd ? changeSlide(0) : changeSlide(++currentSlideIndex);
+        isEnd ? changeSlideIndex(0) : changeSlideIndex(++currentSlideIndex);
         console.log(currentSlideIndex);
         indexHeroSliderWrapper.innerHTML = slidesArr[currentSlideIndex];
-    }, 5000);
+    }, changeSlideIntervat);
 });
 

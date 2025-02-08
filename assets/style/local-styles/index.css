@@ -10,6 +10,9 @@
     animation: 1s ease-in-out 0s normal none 1 running slide_animation;
 }
 
+.index_hero_s_slide_fade_out {
+    animation: 1s ease-in-out 0s backwards none 1 running slide_fade_out_animation;
+}
 
 .index_hero_s_slide_bg {
     position: absolute;
@@ -121,7 +124,7 @@
     margin: 0 0 0 20px;
 }
 
-.index_hero_s_slide_big_title span::before {
+.index_hero_s_slide_big_title span::after {
     content: '';
     position: absolute;
     left: -5%;
@@ -152,6 +155,15 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes slide_fade_out_animation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .1;
     }
 }
 
