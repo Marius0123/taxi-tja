@@ -105,6 +105,8 @@
     font-size: var(--medium-font-size);
     padding: 0 0 10px;
     opacity: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     animation: 1s ease-in-out .2s normal forwards 1 running title_animation;
 }
 
@@ -263,7 +265,7 @@
 .stats_card {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .stats_card_icon svg{

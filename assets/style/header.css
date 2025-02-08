@@ -82,7 +82,6 @@ header{
 
 .header_logo_container img{
     width: 180px;
-
 }
 
 .header_nav_list{
@@ -164,7 +163,7 @@ header{
     top: var(--mobile-nav-top-margin);
     left: 0;
     width: 100vw;
-    z-index: 3;
+    z-index: 20;
 }
 
 .mobile_nav_wrapper {
