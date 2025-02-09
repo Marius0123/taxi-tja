@@ -9,7 +9,7 @@ import { OurCarsSection } from "./OurCarsSection.js";
 import { FindCarAndStatsSection } from "./FindCarAndStatsSection.js";
 
 const main = document.querySelector("#main");
-
+const pageType = document.querySelector("#pageType").value;
 // GLOBAL STYLES
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/local-styles/pricing.css"> `;
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/local-styles/about.css"> `;
