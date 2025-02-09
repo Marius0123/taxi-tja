@@ -96,6 +96,8 @@ footer .dark_fader {
 
 .footer_nav_links_list_item_content svg {
     fill: var(--orange);
+    resize: none;
+    width: 16px !important;
 }
 
 .footer_nav_links_list_item_content p {

@@ -27,7 +27,7 @@ window.addEventListener('scroll', ()=>{
             isDisplayed = !isDisplayed;
         }
     } else {
-        root.style.setProperty('--mobile-nav-top-margin', '72px');
+        root.style.setProperty('--mobile-nav-top-margin', '64.6px');
     }
 });
 

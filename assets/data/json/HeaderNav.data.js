@@ -55,7 +55,7 @@ export const FooterNavData = [
     {
         name: "Terms Of Service",
         link: "./terms-of-service.html",
-        key: 'contact',
+        key: 'terms',
     },
 ];
 

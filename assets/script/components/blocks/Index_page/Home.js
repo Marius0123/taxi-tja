@@ -19,6 +19,7 @@ document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${page
 // MOBILE STYLES
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/about.css"> `;
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/index.css"> `;
+document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/pricing.css"> `;
 
 
 

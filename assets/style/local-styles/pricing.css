@@ -7,7 +7,7 @@
 }
 
 .princing_wrapper {
-    padding: calc(var(--gap)*3.5);
+    padding: calc(var(--gap)*3.5) 0;
 }
 
 .pricing_sec_head {

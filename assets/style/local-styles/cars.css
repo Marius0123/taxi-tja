@@ -1,7 +1,7 @@
 .cars_content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: calc(var(--gap)/1.5) 0;
+    gap: calc(var(--gap)/1.5);
     padding: calc(var(--gap)*3) 0;
 }
 

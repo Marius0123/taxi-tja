@@ -145,6 +145,7 @@
     padding: var(--gap) var(--gap) calc(var(--gap)*1.2);
     transition: 50ms linear;
     margin: 0 0 calc(var(--gap)*3.5);
+    border-bottom: 5px solid transparent;
 }
 
 .steps_header {
@@ -195,7 +196,7 @@
 
 .steps_card:hover{
     border-bottom: 5px solid var(--orange);
-    margin: 0 0 calc((var(--gap)*3.5) - 5px);
+    margin: 0 0 calc((var(--gap)*3.5));
 }
 
 .steps_card:hover .orange_btn{
