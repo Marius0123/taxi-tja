@@ -308,7 +308,18 @@ select {
 body{
     /* Just for developement { */
     background-color: #fdfdfd;
+    overflow-x: hidden;
     /* } Just for developement */
+}
+
+#loader {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: #000 url('https://i.pinimg.com/originals/25/ef/28/25ef280441ad6d3a5ccf89960b4e95eb.gif');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* main {
@@ -380,4 +391,3 @@ body{
 .get_car_add_wrapper p {
     max-width: 60%;
 }
-

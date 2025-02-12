@@ -14,8 +14,49 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+    .cars_filter_and_sort_wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cars_filter_content, .cars_sort_content{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+    }
+
+    .cars_filter_content svg, .cars_sort_content svg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .cars_filter_content, .cars_sort_content{
+        grid-template-columns: 1fr 6fr;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .cars_content {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .filter_ops_content {
+        flex-direction: column;
+    }
+    .cars_filter_content, .cars_sort_content {
+        grid-template-columns: 1fr 4fr;
+        align-items: start;
+    }
+    .cars_filter_content select, .cars_sort_content select{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cars_filter_content, .cars_sort_content {
+        grid-template-columns: 1fr 3fr;
     }
 }

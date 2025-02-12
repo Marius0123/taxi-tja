@@ -1,8 +1,92 @@
+/* CARS DISPLAY OPTIONS */
+.cars_filter_and_sort_section {
+    padding: 50px 0;
+}
+
+.cars_filter_and_sort_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cars_filter_content, .cars_filter_content p, .cars_sort_content, .cars_sort_content p{
+    display: flex;
+    align-items: center;
+}
+
+.cars_filter_content, .cars_sort_content{
+    gap: 15px;
+}
+
+.cars_filter_content select, .cars_sort_content select{
+    height: 30px;
+}
+
+.filter_ops_content {
+    display: flex;
+    gap: 15px;
+}
+
+.cars_filter_content p, .cars_sort_content p {
+    gap: 5px;
+}
+
+.cars_filter_content svg, .cars_sort_content svg{
+    height: 30px;
+}
+
+.cars_apply_container {
+    display: flex;
+    justify-content: end;
+    padding: calc(var(--gap)/2) 0 0;
+}
+
+.cars_apply_container .round_btn{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    height: 48px;
+    width: 180px;
+    font-size: 16px;
+}
+
+.cars_apply_container .round_btn:hover{
+    color: var(--orange);
+    background-color: var(--black);
+}
+
+.cars_apply_container .round_btn:hover svg{
+    fill: var(--orange);
+}
+
+/* CARS BLOCK NUMBER */
+.cars_block_number_content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 0 0 calc(var(--gap)*2);
+}
+
+.cars_block_number_content .round_btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.cars_block_number_content .round_btn:hover{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: var(--black);
+}
+
+
+/* CARS GRID */
 .cars_content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: calc(var(--gap)/1.5);
-    padding: calc(var(--gap)*3) 0;
+    padding: 0 0 calc(var(--gap)*1.5);
 }
 
 
