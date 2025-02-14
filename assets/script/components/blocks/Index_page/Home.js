@@ -7,6 +7,7 @@ import { PricingCardsList } from "../Pricing_page/PricingCardsList.js";
 import { TestimonialSection } from "../About_page/TestimonialsSection.js";
 import { OurCarsSection } from "./OurCarsSection.js";
 import { FindCarAndStatsSection } from "./FindCarAndStatsSection.js";
+import { NewsletterSection } from "./NewsletterSection.js";
 
 const main = document.querySelector("#main");
 const pageType = document.querySelector("#pageType").value;
@@ -28,6 +29,7 @@ main.innerHTML =
             ${AboutSection}
             ${FindCarAndStatsSection}
             ${StepsSection}
+            ${NewsletterSection}
             ${OurCarsSection}
             ${PricingCardsList}
             ${GetCarAdd}
