@@ -12,8 +12,8 @@ const SectionContent =
                                     <div class="sign_for_newsletter_desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</div>
                                     <div class="sign_for_newsletter_form">
                                         <form action="" id="newsletterForm">
-                                            <input type="email" class="middle_radius_input grey_input" name="name" id="" placeholder="Email address">
-                                            <button type="submit" class="round_btn black_btn capitalise">
+                                            <input type="email" id="emailInput" class="middle_radius_input grey_input" name="name" id="" placeholder="Email address">
+                                            <button type="button" id="submitBtn" class="round_btn black_btn capitalise">
                                                 Subscribe now
                                             </button>
                                         </form>

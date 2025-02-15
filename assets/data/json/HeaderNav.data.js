@@ -54,7 +54,7 @@ export const FooterNavData = [
     },
     {
         name: "Terms Of Service",
-        link: "./terms-of-service.html",
+        link: "../assets/media/docs/Car Rental Terms and Conditions.pdf",
         key: 'terms',
     },
 ];

@@ -17,7 +17,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 
-const db = getDatabase();
+export const db = getDatabase();
 
 
 //Add information

@@ -3,11 +3,19 @@ import { HeaderNavData } from "../../../../data/json/HeaderNav.data.js";
 const pageKey = document.querySelector('#pageKey').value;
 console.log(pageKey);
 
-const pageNavIndex = HeaderNavData.findIndex((e)=>e.key==pageKey);
-console.log(pageNavIndex);
+let pageNavIndex;
+let pageName;
 
-const pageName = HeaderNavData[pageNavIndex].name;
-console.log(pageName);
+if(pageKey != 'car'){
+    pageNavIndex = HeaderNavData.findIndex((e)=>e.key==pageKey);
+    console.log(pageNavIndex);
+
+    pageName = HeaderNavData[pageNavIndex].name;
+    console.log(pageName);
+} else {
+    pageName = 'car model';
+}
+
 
 const PageHeadContent = 
             `<section class="page_head">
@@ -23,6 +31,14 @@ const PageHeadContent =
                                             </a>
                                         </div>
                                         <div class="page_head_links_devidor"></div>
+                                        ${pageKey == 'car' ? 
+                                                `<div class="page_head_link_one_block">
+                                                    <a href="./our-cars.html">
+                                                        <p class="page_head_link_one page_head_link capitalise">Our cars</p>
+                                                    </a>
+                                                </div>
+                                                <div class="page_head_links_devidor"></div>
+                                                ` : ''}
                                         <div class="page_head_link_two_block">
                                             <p class="page_head_link_two page_head_link capitalise">${pageName}</p>
                                         </div>
