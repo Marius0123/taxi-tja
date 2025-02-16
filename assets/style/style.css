@@ -228,6 +228,10 @@ select {
         text-transform: capitalize;
     }
 
+    .uppercase {
+        text-transform: uppercase;
+    }
+
     .section_title {
         padding: 5px 0 10px;
         line-height: 1.35;
@@ -451,4 +455,316 @@ body{
 
 .get_car_add_wrapper p {
     max-width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#car_page_block {
+    padding: calc(var(--gap)*2) 0;
+}
+
+.car_page_cotainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+
+.car_conteiner_col_1 img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.car_text {
+    padding: 20px 0 0;
+}
+
+.car_conteiner_col_2_header .extra_big_p {
+    font-size: 42px;
+    line-height: 1;
+}
+
+.car_rating {
+    display: flex;
+    gap: calc(var(--gap)/3);
+    padding: 15px 0;
+}
+
+.car_rating svg {
+    width: 16px;
+    fill: var(--orange);
+}
+
+.car_details {
+    padding: calc(var(--gap)/1.5) 0 calc(var(--gap)*1.2);
+}
+
+.car_details_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--gap)/2.5);
+}
+
+.car_details_item_card {
+    border: 1px solid var(--middle-light-grey);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--white);
+    transition: var(--transition-one);
+}
+
+.detail_type{
+    font-size: 18px;
+}
+
+.detail_title {
+    padding: 10px 0 0;
+    font-size: 13px;
+    color: var(--light-grey);
+}
+
+.detail_nr {
+    font-size: 38px;
+    color: var(--middle-light-grey);
+    transition: var(--transition-one);
+}
+
+.car_details_item_card:hover{
+    box-shadow: 0px 0px 42px 9px rgba(173, 173, 173, 0.18);
+}
+
+.car_details_item_card:hover .detail_nr {
+    color: var(--orange);
+    opacity: .7;
+}
+
+.car_price_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--gap)/2.5);
+    padding: 0 0 var(--gap);
+}
+
+.price_content:nth-child(2){
+    margin: 0 0 0 calc(var(--gap)/-2.5);
+}
+
+.price_content {
+    display: flex;
+    align-items: end;
+}
+
+.price_content_sum {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.price_content_sum sup{
+    font-size: 20px;
+}
+
+.car_conteiner_col_2_footer .orange_btn {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    padding: 0;
+    height: 50px;
+    width: 180px;
+}
+
+.car_conteiner_col_2_footer .orange_btn:hover{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#car_pop_up {
+    position: fixed;
+    top: 113px;
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.car_pop_up_wrapper{
+    width: auto;
+    height: auto;
+    background: var(--dark-brown);
+    border-radius: 5px;
+    padding: 32px;
+}
+
+.car_pop_up_header {
+    display: flex;
+    justify-content: end;
+    padding: 0 0 10px;
+}
+
+#closePopUp svg {
+    fill: var(--extra-light-grey);
+    height: 20px;
+    width: 20px;
+}
+
+#carForm input, #carForm select, #carForm textarea {
+    background-color: var(--extra-light-grey);
+    border-radius: 3px;
+    border: none;
+}
+
+#carForm input, #carForm select {
+    height: 50px;
+}
+
+#carForm textarea {
+    width: 100%;
+}
+
+.car_pop_up_sec_1, .car_pop_up_sec_2 {
+    gap: calc(var(--gap)/3);
+}
+
+.car_pop_up_sec_2 {
+    padding: calc(var(--gap)/3) 0;
+}
+
+.car_pop_up_sec_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.car_pop_up_sec_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.car_pop_up_sec_3 {
+    padding: 0 0 var(--gap);
+}
+
+.car_pop_up_sec_4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.car_pop_up_sec_4 button{
+    width: 150px;
+    height: 50px;
+}
+
+.calc_block {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+#sum {
+    color: var(--white);
+    font-size: 25px;   
+}
+
+#calcSumBtn {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    color: var(--white);
+}
+
+#calcSumBtn:hover {
+    color: var(--orange);
+}
+
+#bookCarBtn:hover {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--orange);
 }
