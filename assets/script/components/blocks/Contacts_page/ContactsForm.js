@@ -8,10 +8,10 @@ const ContactsFormContent =
                     </div>
                     <form action="" method="GET" id="contactForm">
                         <div class="contact_form_input_group">    
-                            <input class="middle_radius_input grey_input" type="text" name="name" id="nameInput" placeholder="First name">
-                            <input class="middle_radius_input grey_input" type="email" name="email" id="emailInput" placeholder="Email">
-                            <input class="middle_radius_input grey_input" type="text" name="subject" id="subjectInput" placeholder="Subject">
-                            <textarea class="middle_radius_input grey_input" name="message" id="contentInput" placeholder="Message"></textarea>
+                            <input class="middle_radius_input grey_input" type="text" name="name" id="nameInput" placeholder="First name" required>
+                            <input class="middle_radius_input grey_input" type="email" name="email" id="emailInput" placeholder="Email" required>
+                            <input class="middle_radius_input grey_input" type="text" name="subject" id="subjectInput" placeholder="Subject" required>
+                            <textarea class="middle_radius_input grey_input" name="message" id="contentInput" placeholder="Message" required></textarea>
                         </div>
                         
                         <button type="button" id="submitBtn" class="round_btn capitalise orange_btn">

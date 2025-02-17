@@ -1,0 +1,57 @@
+@media screen and (max-width: 950px) {
+    .car_page_cotainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .car_pop_up_sec_2 {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .car_pop_up_sec_4{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .car_pop_up_sec_2,  .car_pop_up_sec_1{
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .car_details_list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+
+    .car_form_header.section_head *{
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .car_price_block{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .price_content:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .calc_block {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 10px;
+    }
+}

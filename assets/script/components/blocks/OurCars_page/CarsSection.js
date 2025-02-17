@@ -5,7 +5,7 @@ const SectionContent =
                 <div class="cars_block">
                     <div class="cars_container">
                         <div class="cars_wrapper">
-                            <div class="content_block">
+                            <div class="content_block cars_content_block">
                                 <div class="cars_content">
                                     ${CarsList}
                                 </div>

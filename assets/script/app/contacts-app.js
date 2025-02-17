@@ -1,4 +1,4 @@
-import { emailExistsAlert, emailNotValideAlert, emailSuccess } from "../../data/json/Alerts.data.js";
+import { badRequest, emailExistsAlert, emailNotValideAlert, emailSuccess } from "../../data/json/Alerts.data.js";
 import { db } from "./app.js";
 import { ref, set, onValue, push, onChildAdded, onChildChanged, onChildRemoved } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
 
@@ -24,21 +24,26 @@ submitBtn.addEventListener('click', ()=>{
         const content = contentInput.value;
 
         if(email.includes('@') && email.includes('.')){
-            try {
-                const newContactsRef = push(contactsListRef);
-                set(newContactsRef, {
-                    name: name,
-                    email: email,
-                    subject: subject,
-                    content: content,
-                    time: (new Date()).toLocaleString(),
-                });
-            } catch (err) {
-                console.log(err);
+            if(name == '' && subject == '' && content == ''){
+                try {
+                    const newContactsRef = push(contactsListRef);
+                    set(newContactsRef, {
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        content: content,
+                        time: (new Date()).toLocaleString(),
+                    });
+                } catch (err) {
+                    console.log(err);
+                }
+                console.log('email added');
+                contactForm.reset();
+                window.alert(emailSuccess);
+            } else {
+                window.alert(badRequest);
             }
-            console.log('email added');
-            contactForm.reset();
-            window.alert(emailSuccess);
+            
         } else {
             window.alert(emailNotValideAlert);
         }

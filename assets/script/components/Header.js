@@ -1,3 +1,4 @@
+import { CompanyInfoData } from '../../data/json/CompanyInfo.data.js';
 import {RelativeHeader} from './blocks/header/RelativeHeader.js';
 import { StickyHeader } from './blocks/header/StickyHeader.js';
 
@@ -7,7 +8,10 @@ const headerScript = document.querySelector("#headerScript");
 
 const pageType = document.querySelector("#pageType").value;
 
+document.querySelector('title').textContent = CompanyInfoData.name;
 
+document.querySelector('head').innerHTML += `<meta name="description" content="${CompanyInfoData.shortDesc}">`;
+document.querySelector('head').innerHTML += `<meta name="keywords" content="${CompanyInfoData.keyWords}">`;
 
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/header.css"> `;
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/header.css"> `;

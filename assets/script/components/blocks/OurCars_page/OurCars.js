@@ -13,14 +13,16 @@ document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${page
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/cars.css"> `;
 
 
+document.querySelector('title').textContent += ` - Mașinile noastre`;
+
 const CarsContent = 
             `${PageHead} 
             ${CarsDisplayOpts}
             ${CarsSection}
-            ${CarsBlockNumber}
+            
             ${StepsSection}
             ${GetCarAdd}`;
-        
+        //${CarsBlockNumber}
 const CarsPage = CarsContent;
 
 main.innerHTML = CarsPage;

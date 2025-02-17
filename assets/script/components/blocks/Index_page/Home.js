@@ -22,6 +22,7 @@ document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${page
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/index.css"> `;
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/pricing.css"> `;
 
+document.querySelector('title').textContent += ` - Acasă`;
 
 
 main.innerHTML = 

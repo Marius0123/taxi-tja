@@ -7,6 +7,7 @@ const pageType = document.querySelector("#pageType").value;
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/local-styles/contacts.css"> `;
 document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${pageType == 'index' ? '' : '.'}./assets/style/mobile-styles/local-style/contacts.css"> `;
 
+document.querySelector('title').textContent += ` - Contacte`;
 
 const ContactsContent = 
             `${PageHead}
