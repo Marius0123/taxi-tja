@@ -13,7 +13,7 @@ if(pageKey != 'car'){
     pageName = HeaderNavData[pageNavIndex].name;
     console.log(pageName);
 } else {
-    pageName = 'car model';
+    pageName = 'Our cars'
 }
 
 
@@ -37,10 +37,10 @@ const PageHeadContent =
                                                         <p class="page_head_link_one page_head_link capitalise">Our cars</p>
                                                     </a>
                                                 </div>
-                                                <div class="page_head_links_devidor"></div>
                                                 ` : ''}
                                         <div class="page_head_link_two_block">
-                                            <p class="page_head_link_two page_head_link capitalise">${pageName}</p>
+                                        ${pageKey == 'car' ? 
+                                            `` : '<p class="page_head_link_two page_head_link capitalise">${pageName}</p>'}
                                         </div>
                                     </div>
                                     <p class="page_title capitalise">${pageName}</p>

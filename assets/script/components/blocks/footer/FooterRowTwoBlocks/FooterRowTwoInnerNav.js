@@ -9,7 +9,7 @@ FooterNavData.forEach((e)=>{
     // console.log(e.key);
     FooterInnerNavMenuContent += 
         `<div class="footer_nav_links_list_item">
-            <a href="${link}">
+            <a href="${link}" ${e.key == 'terms' ? `target="blank"` : ""}>
                 <div class="footer_nav_links_list_item_content">
                     <div class="footer_nav_links_list_item_content_arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">

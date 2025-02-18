@@ -10,7 +10,9 @@ document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${page
 
 const AboutContent = 
             `${PageHead}
-            ${CarInfo}
+            <div class="carInfoBlock">
+                ${CarInfo}
+            </div>
             ${CarForm}`;
         
 const About = AboutContent;

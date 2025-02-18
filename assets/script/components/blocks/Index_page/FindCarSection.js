@@ -1,3 +1,17 @@
+// import { brandsArrData, transArrData } from "../../../app/our-cars-app.js";
+
+// let BrandOpts = ``;
+// brandsArrData.forEach((e, index)=>{
+//     BrandOpts+=
+//             `<option value="${index+1}">${e.name}</option>`;
+// });
+
+// let TransmissionOpts = ``;
+// transArrData.forEach((e, index)=>{
+//     TransmissionOpts+=
+//             `<option value="${index+1}">${e}</option>`;
+// });
+
 
 const SectionContent = 
             `<section id="find_car_section">
@@ -12,30 +26,19 @@ const SectionContent =
                                     Find Your Car Here!
                                 </div>
                                 <div class="find_car_form_container">
-                                    <form action="">
-                                        <select name="year" id="">
-                                            <option value="1">year</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
+                                    <form action="./pages/our-cars.html">
+                                        <select name="brands" id="brands">
+                                            <option value="-1" selected disabled>-Brand-</option>
+                                            
                                         </select>
-                                        <select name="engliment" id="">
-                                            <option value="1">engliment</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
+                                        <select name="transmission" id="transmission">
+                                            <option value="-1" selected disabled>-Cutie-</option>
+                                            
                                         </select>
-                                        <select name="model" id="">
-                                            <option value="1">model</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
+                                        <select name="airConditioning" id="">
+                                            <option selected disabled value="-1">-Aer Cond.-</option>
+                                            <option value="true">Da</option>
+                                            <option value="false">Nu</option>
                                         </select>
                                         <button type="submit" class="round_btn black_btn capitalise">
                                             Search

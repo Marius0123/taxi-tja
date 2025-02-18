@@ -2,7 +2,7 @@ import { carsArrData } from "../../../app/our-cars-app.js";
 
 let List = ``;
 
-carsArrData.forEach((car)=>{
+carsArrData.forEach((car, index)=>{
     let stars = ``;
     // console.log(car.rating)
     for(let i = 0; i < Math.round(car.rating); i++){
@@ -28,7 +28,7 @@ carsArrData.forEach((car)=>{
                 </div>
                 <div class="car_card_body">
                     <div class="car_name">
-                        <a href="./car.html" class="orange_hover bold_p smaller_section_title">${car.model} (${car.year})</a>
+                        <a href="./car.html?id=${index+1}" class="orange_hover bold_p smaller_section_title">${car.model} (${car.year})</a>
                     </div>
                     <div class="car_details_list">
                         <div class="car_details_l_item">
@@ -54,7 +54,7 @@ carsArrData.forEach((car)=>{
                     </div>
                 </div>
                 <div class="car_card_footer">
-                    <a href="./car.html" class="round_btn capitalise orange_btn">
+                    <a href="./car.html?id=${index+1}" class="round_btn capitalise orange_btn">
                         More details
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
