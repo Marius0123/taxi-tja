@@ -1,7 +1,7 @@
 import { PartnersData } from "../../../../../data/json/Partners.data.js";
 
 let ListContent = ``;
-PartnersData.forEach((e)=>{
+brandsArrData.forEach((e)=>{
     ListContent += 
             `<div class="partner_item">
                 <a href="${e.link}">

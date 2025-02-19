@@ -1,5 +1,3 @@
-import { PartnersList } from "./PartnersSection/PartnersList.js";
-
 const SectionContent = 
             `<section id="partners_section">
                 <div class="partners_block">
@@ -10,7 +8,7 @@ const SectionContent =
                         </div>
                         <div class="partners_wrapper content_block">
                             <div class="partners_content">
-                                ${PartnersList}
+                                
                             </div>
                         </div>
                     </div>

@@ -232,7 +232,7 @@ main.addEventListener('click', (event)=>{
         }
 
 
-        selectedCars.forEach((car)=>{
+        selectedCars.forEach((car, index)=>{
             // console.log(car);
             let stars = ``;
             // console.log(car.id);
@@ -257,7 +257,7 @@ main.addEventListener('click', (event)=>{
                         </div>
                         <div class="car_card_body">
                             <div class="car_name">
-                                <a href="./car.html" class="orange_hover bold_p smaller_section_title">${car.model} (${car.year})</a>
+                                <a href="./car.html?id=${index+1}" class="orange_hover bold_p smaller_section_title">${car.model} (${car.year})</a>
                             </div>
                             <div class="car_details_list">
                                 <div class="car_details_l_item">
@@ -283,7 +283,7 @@ main.addEventListener('click', (event)=>{
                             </div>
                         </div>
                         <div class="car_card_footer">
-                            <a href="./car.html" class="round_btn capitalise orange_btn">
+                            <a href="./car.html?id=${index+1}" class="round_btn capitalise orange_btn">
                                 More details
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>

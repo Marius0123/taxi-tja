@@ -40,7 +40,7 @@ const PageHeadContent =
                                                 ` : ''}
                                         <div class="page_head_link_two_block">
                                         ${pageKey == 'car' ? 
-                                            `` : '<p class="page_head_link_two page_head_link capitalise">${pageName}</p>'}
+                                            `` : `<p class="page_head_link_two page_head_link capitalise">${pageName}</p>`}
                                         </div>
                                     </div>
                                     <p class="page_title capitalise">${pageName}</p>

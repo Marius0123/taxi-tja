@@ -110,7 +110,7 @@ for(let i = 0; i < 2; i++){
                         </div>
                         <div class="car_card_body">
                             <div class="car_name">
-                                <a href="./pages/car.html?id=${i+1}" class="orange_hover bold_p smaller_section_title">${carsArr[i].model} (${carsArr[i].year})</a>
+                                <a href="./pages/car.html?id=${carsArr[i].id}" class="orange_hover bold_p smaller_section_title">${carsArr[i].model} (${carsArr[i].year})</a>
                             </div>
                             <div class="car_details_list">
                                 <div class="car_details_l_item">
@@ -136,7 +136,7 @@ for(let i = 0; i < 2; i++){
                             </div>
                         </div>
                         <div class="car_card_footer">
-                            <a href="./pages/car.html?id=${i+1}" class="round_btn capitalise orange_btn">
+                            <a href="./pages/car.html?id=${carsArr[i].id}" class="round_btn capitalise orange_btn">
                                 More details
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
@@ -149,3 +149,30 @@ for(let i = 0; i < 2; i++){
 
 const carsSection = document.querySelector('.our_cars_index_cars_content');
 carsSection.innerHTML=CarCards;
+
+
+
+
+
+
+
+
+
+let Partners = ``;
+brandsArrData.forEach((e, index)=>{
+    if(index!=3){
+        Partners+=
+        `<div class="partner_item">
+            <a href="${e.link}">
+                <img src="${e.logo}" alt="" title="${e.name}">
+            </a>
+        </div>`;
+    }
+    
+});
+
+console.log(Partners);
+
+
+
+document.querySelector('.partners_content').innerHTML = Partners;

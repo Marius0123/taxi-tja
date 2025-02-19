@@ -9,14 +9,6 @@ const modelsListRef = ref(db, `models/`);
 const transmissionListRef = ref(db, `transmission/`);
 
 
-
-
-
-
-
-
-
-
 const carList = [];
 const brandList = [];
 const modelList = [];

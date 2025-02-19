@@ -110,6 +110,12 @@ const SectionContent =
 
 
 document.querySelector('.carInfoBlock').innerHTML = SectionContent;
+
+
+
+
+
+
 // TO SERVER (FROM APP) //
 // GENERAL
 const carIdInput = document.querySelector('#carIdInput');
@@ -149,7 +155,6 @@ const bookingListRef = ref(db, `bookingReg/`);
 
 function checkData() {
     if(
-        carIdInput.value == '' ||
         nameInput.value == '' ||
         emailInput.value == '' ||
         phoneInput.value == '' ||
@@ -177,37 +182,42 @@ function checkEmail() {
     }
 }
 
-async function checkAvailability(carId, pickupDateTime, dropoffDateTime){
-    //try {
-        onChildAdded(bookingListRef, (data)=>{
-            const currentCar = data.val();
-            if(carId == currentCar.carId) {
-                const dbPickupTD = new Date(currentCar.pickupDate + " " + currentCar.pickupTime);
-                const dbDropoffTD = new Date(currentCar.dropoffDate + " " + currentCar.dropoffTime);
-                if((pickupDateTime > dbPickupTD && pickupDateTime < dbDropoffTD)
-                    ||
-                    (dropoffDateTime > dbPickupTD && dropoffDateTime < dbDropoffTD)){
-                        console.log('this car is taken'); 
-                        return false;
-                } else {
-                    console.log('this car is available');
-                    return true;
-                }
-            } else {
-                console.log('this car is available');
-                return true;
-            }
-        });
-    // } catch (err) {
-    //     console.log(err);
-    //     return false;
-    // }
+
+function fetchData(carId, pickupDateTime, dropoffDateTime){
+
 }
 
-console.log(await checkAvailability(1, (new Date(pickupDateInput.value + " " + pickupTimeInput.value)), (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value))));
+async function checkAvailability(carId, pickupDateTime, dropoffDateTime) {
+    return new Promise((resolve, reject) => {
+        try {
+            onValue(bookingListRef, (snapshot) => {
+                let isAvailable = true;
+                snapshot.forEach((child) => {
+                    const currentCar = child.val();
+                    if (carId == currentCar.carId) {
+                        const dbPickupTD = new Date(currentCar.pickupDate + " " + currentCar.pickupTime).getTime();
+                        const dbDropoffTD = new Date(currentCar.dropoffDate + " " + currentCar.dropoffTime).getTime();
+
+                        if ((pickupDateTime >= dbPickupTD && pickupDateTime < dbDropoffTD) ||
+                            (dropoffDateTime > dbPickupTD && dropoffDateTime <= dbDropoffTD) ||
+                            (pickupDateTime <= dbPickupTD && dropoffDateTime >= dbDropoffTD)) {
+                            console.log('Car is taken');
+                            isAvailable = false;
+                        }
+                    }
+                });
+                resolve(isAvailable);
+            }, (error) => reject(error));
+        } catch (err) {
+            console.log(err);
+            reject(false);
+        }
+    });
+}
+checkAvailability(id, (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(), (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()));
 
 function calcSum(tax, pickupDateTime, dropoffDateTime) {
-    const sum = ((new Date(dropoffDateTime - pickupDateTime)).getHours) * tax;
+    const sum = (((new Date(dropoffDateTime - pickupDateTime)).getTime()) / 1000 / 60 / 60 * tax).toFixed(2);
     return sum;
 }
 
@@ -222,20 +232,34 @@ function calcSum(tax, pickupDateTime, dropoffDateTime) {
 // console.log(messageInput.value)
 
 
-bookBtn.addEventListener('click', ()=>{
+// DISPLAY SUM
+calcBtn.addEventListener('click', ()=>{
+    if(checkData()){
+        const sum = (calcSum(parseFloat(thisCar.taxPerKm), (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(),  (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime())));
+        console.log(sum);
+        sumP.textContent = `$${sum}`;
+    } else {
+        window.alert(badRequest)
+    }
+});
+
+
+// BOOK CAR
+bookBtn.addEventListener('click', async ()=>{
     const pickupDateTime = new Date(pickupDateInput.value + " " + pickupTimeInput.value);
     const dropoffDateTime = new Date(dropoffDateInput.value + " " + dropoffTimeInput.value);
-    const isAvailable = checkAvailability(carIdInput.value, pickupDateTime, dropoffDateTime);
+    const isAvailable = await checkAvailability(id, (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(), (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()));
+    console.log(isAvailable);
     const isDataValid = checkData();
     const isEmailValid = checkEmail();
 
-    if(isEmailValid){
-        if(isDataValid){
+    if(isDataValid){
+        if(isEmailValid){
             if(isAvailable){
-                const sum = calcSum(20, pickupDateTime, dropoffDateTime);
+                const sum = calcSum(parseFloat(thisCar.taxPerKm), (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(),  (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()));
                 const newBookingRef = push(bookingListRef);
                 set(newBookingRef, {
-                    carId: carIdInput.value,
+                    carId: id,
                     clientName: nameInput.value,
                     dropoffDate: dropoffDateInput.value,
                     dropoffLocation: dropoffLocationInput.value,
@@ -250,7 +274,7 @@ bookBtn.addEventListener('click', ()=>{
                     pickupTime: pickupTimeInput.value,
                     sum: sum,
                 });
-                window.alert('Car booked successfully')
+                window.alert('Car booked successfully');
             } else {
                 window.alert(carTaken);
             }
@@ -260,6 +284,4 @@ bookBtn.addEventListener('click', ()=>{
     } else {
         window.alert(emailNotValideAlert);
     }
-
-    // console.log(pickupDateTime);
 });
