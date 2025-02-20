@@ -8,7 +8,7 @@ export const TestimonialsData = [
         author: 'Jone Walker',
         car: 'Toyota Camry (1982)',
         rating: 4,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -19,7 +19,7 @@ export const TestimonialsData = [
         author: 'Will Kolder',
         car: 'Toyota Camry (1982)',
         rating: 5,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -30,7 +30,7 @@ export const TestimonialsData = [
         author: 'Emily Prentiss',
         car: 'Toyota Camry (1982)',
         rating: 5,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -41,7 +41,7 @@ export const TestimonialsData = [
         author: 'Sam Black',
         car: 'Toyota Camry (1982)',
         rating: 4,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -52,7 +52,7 @@ export const TestimonialsData = [
         author: 'Daniel Hondo',
         car: 'Toyota Camry (1982)',
         rating: 5,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -63,7 +63,7 @@ export const TestimonialsData = [
         author: 'Derek Morgen',
         car: 'Toyota Camry (1982)',
         rating: 5,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -74,7 +74,7 @@ export const TestimonialsData = [
         author: 'Spencer Reid',
         car: 'Toyota Camry (1982)',
         rating: 5,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -85,7 +85,7 @@ export const TestimonialsData = [
         author: 'Derek Morgen',
         car: 'Toyota Camry (1982)',
         rating: 5,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     {
         photo: {
@@ -96,7 +96,7 @@ export const TestimonialsData = [
         author: 'Daniel Hondo',
         car: 'Toyota Camry (1982)',
         rating: 4,
-        desc: 'It is a long established fact reader will be distracted by the readable content of a page when looking at its layout. Many desktop publihing packages and web pagejk editors now use Lorem',
+        desc: 'Am avut o experiență excelentă cu PrimeDrive. Mașina a fost curată, bine întreținută și exact ce mi s-a promis. Procesul de rezervare a fost rapid și simplu, iar personalul foarte amabil și profesionist. Cu siguranță voi reveni și recomand tuturor acest serviciu de închiriere!',
     },
     
 ];
