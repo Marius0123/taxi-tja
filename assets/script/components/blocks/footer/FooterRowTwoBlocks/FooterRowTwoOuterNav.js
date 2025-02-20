@@ -19,7 +19,7 @@ FooterNavDataOuterLinks.forEach((e)=>{
 
 const FooterOuterNavContent = 
             `<div class="footer_content_row_two_inner_nav footer_content_row_two_column">
-                <p class="nav_category_title capitalise">More Service</p>
+                <p class="nav_category_title capitalise">Alte servicii</p>
                 <div class="footer_nav_links_list">
                     ${FooterOuterNavMenuContent}
                 </div>

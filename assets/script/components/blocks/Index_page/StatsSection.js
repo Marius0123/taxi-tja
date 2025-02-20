@@ -11,8 +11,8 @@ const SectionContent =
                                         <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
                                     </svg>
                                 </div>
-                                <div class="stats_card_data">48+</div>
-                                <div class="stats_card_name capitalise">KM Driven</div>
+                                <div class="stats_card_data">500+</div>
+                                <div class="stats_card_name capitalise">Review-uri pozitive</div>
                             </div>
                             <div class="stats_card">
                                 <div class="stats_card_icon">
@@ -22,7 +22,7 @@ const SectionContent =
                                     </svg>
                                 </div>
                                 <div class="stats_card_data">5+</div>
-                                <div class="stats_card_name capitalise">People Droped</div>
+                                <div class="stats_card_name capitalise">Servicii adăugătoare prestate</div>
                             </div>
                             <div class="stats_card">
                                 <div class="stats_card_icon">
@@ -32,7 +32,7 @@ const SectionContent =
                                     </svg>
                                 </div>
                                 <div class="stats_card_data">2k+</div>
-                                <div class="stats_card_name capitalise">Taxi And Drivers</div>
+                                <div class="stats_card_name capitalise">Mașini închiriate</div>
                             </div>
                             <div class="stats_card">
                                 <div class="stats_card_icon">
@@ -42,7 +42,7 @@ const SectionContent =
                                     </svg>
                                 </div>
                                 <div class="stats_card_data">2k+</div>
-                                <div class="stats_card_name capitalise">Taxi And Drivers</div>
+                                <div class="stats_card_name capitalise">Clienți mulțumiți</div>
                             </div>
                         </div>
                     </div>

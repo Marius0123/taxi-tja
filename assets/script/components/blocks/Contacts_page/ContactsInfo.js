@@ -24,7 +24,7 @@ address.data.forEach((e)=>{
 
 const ContactsInfoContent = 
             `<div class="contacts_info">
-                <p class="small_section_title section_title capitalise">Contact details</p>
+                <p class="small_section_title section_title capitalise">Date de contact</p>
                 <div>
                     ${Address}
                 </div>

@@ -1,18 +1,18 @@
 export const FaqData = [
     {
-        name: 'Breaking The Rules Using To Demo Web ?',
-        answer: 'Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.',
+        name: 'Cum fac o inchiriere online a masinii ?',
+        answer: '1.Selectați tipul de vehicul, 2.Introduceti datele calatoriei, 3.Citirea termenilor și condițiilor, 4.Introduceți informațiile personale, 5.Confirmare rezervare, 6.Preluarea automobilului.',
     },
     {
-        name: 'Monthly Web Update Pragmatic Releasing ?',
-        answer: 'Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.',
+        name: 'Documentele necesare ?',
+        answer: 'Pentru a închiria un automobil în Chișinău în 2024, va trebui să prezentați o serie de documente. Cel mai important dintre acestea este un permis de conducere valid. Majoritatea agențiilor de închiriere solicită un permis internațional de conducere pentru turiștii străini.',
     },
     {
-        name: 'How To Use Improve User Experience ?',
-        answer: 'Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.',
+        name: 'Vârsta minimă a șoferului ?',
+        answer: ' În majoritatea cazurilor, vârsta minimă pentru a închiria un automobil în Chișinău este de 23 de ani. Totuși, pentru șoferii sub 23 de ani, se poate aplica o taxă suplimentară pentru asigurarea auto, cunoscută sub numele de „taxa pentru șoferii tineri”.',
     },
     {
-        name: 'Understanding CSS Layout And Formatting ?',
-        answer: 'Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.',
+        name: 'Cat de rapid pot prelua masina ?',
+        answer: 'Dupa verificarile necesare a documentelor prezentate, cat si a datelor de contact, masina va fi disponibila in aceeasi zi de cand a fost inregistrata o comanda, bazandu-ne pe incredere si pe comfortul maxim al consumatorului.',
     },
 ]

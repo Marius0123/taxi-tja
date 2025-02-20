@@ -8,10 +8,10 @@ const SectionContent =
                             <div class="faq_content">
                                 <div class="faq_content_header">
                                     <div class="section_title extra_big_p title_fade_in">
-                                        Get every single answer here For Faq.
+                                        Ai Întrebări? Avem Răspunsuri!
                                     </div>
                                     <div class="medium_p">
-                                        Special wedding garments are often worn, and the ceremony is sometimes followed by a wedding reception. Music, poetry.
+                                        Răspundem la cele mai frecvente întrebări pentru a-ți face experiența mai ușoară. Găsește rapid informațiile de care ai nevoie!
                                     </div>
                                 </div>
                                 <div class="faq_content_body">

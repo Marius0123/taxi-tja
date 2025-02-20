@@ -22,7 +22,9 @@
 
 
 .pricing_content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: calc(var(--gap)*1);
     align-items: center;
     justify-content: space-between;
@@ -31,6 +33,9 @@
 /* ALL CARDS */
 
 .pricing_card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border: 1px solid var(--grey);
     border-radius: var(--middle-border-radius);
     padding: calc(var(--gap)*1.5) calc(var(--gap)*1.4);
@@ -74,15 +79,23 @@
 .pricing_card_footer_btn {
     border: 1px solid var(--orange);
     width: 100%;
+
 }
 
 .pricing_card_footer_btn a{
     width: 100%;
 }
 
+.pricing_card_footer{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
 .pricing_card_footer_btn * {
     color: var(--white);
     fill: var(--white);
+    margin-bottom: 0;
 }
 
 .pricing_card_footer_btn:hover {

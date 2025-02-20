@@ -1,21 +1,21 @@
 export const HeaderNavData = [
     {
-        name: "Home",
+        name: "Acasă",
         link: "./",
         key: 'home',
     },
     {
-        name: "About us",
+        name: "Despre noi",
         link: "./about.html",
         key: 'about',
     },
     {
-        name: "Our cars",
+        name: "Mașini",
         link: "./our-cars.html",
         key: 'cars',
     },
     {
-        name: "Pricing",
+        name: "Tarife",
         link: "./pricing.html",
         key: 'pricing',
     },
@@ -25,7 +25,7 @@ export const HeaderNavData = [
         key: 'faq',
     },
     {
-        name: "Contact us",
+        name: "Contacte",
         link: "./contacts.html",
         key: 'contact',
     },
@@ -33,12 +33,12 @@ export const HeaderNavData = [
 
 export const FooterNavData = [
     {
-        name: "Home",
+        name: "Acasă",
         link: "./",
         key: 'home',
     },
     {
-        name: "About us",
+        name: "Despre noi",
         link: "./about.html",
         key: 'about',
     },
@@ -48,12 +48,12 @@ export const FooterNavData = [
         key: 'faq',
     },
     {
-        name: "Contact us",
+        name: "Contacte",
         link: "./contacts.html",
         key: 'contact',
     },
     {
-        name: "Terms Of Service",
+        name: "Termeni și condiții",
         link: "../assets/media/docs/Car Rental Terms and Conditions.pdf",
         key: 'terms',
     },
@@ -61,27 +61,19 @@ export const FooterNavData = [
 
 export const FooterNavDataOuterLinks = [
     {
-        name: "Your Reliable Ride",
-        link: "./",
+        name: "Aeroportul Chișinău",
+        link: "https://airport.md/en",
     },
     {
-        name: "On Time Every Time",
-        link: "./",
+        name: "Hotele în oraș",
+        link: "https://www.booking.com/searchresults.en-gb.html?ss=Chi%C5%9Fin%C4%83u%2C+Moldova&efdco=1&label=en-md-booking-desktop-95zO_jq_RZkWbZ8LLFNNfAS652796016666%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp9195854%3Ali%3Adec%3Adm&aid=2311236&lang=en-gb&sb=1&src_elem=sb&src=index&dest_id=-2276223&dest_type=city&group_adults=2&no_rooms=1&group_children=0",
     },
     {
-        name: "ExpressShuttle",
-        link: "./",
+        name: "Obiective turistice",
+        link: "https://visit.chisinau.md/",
     },
     {
-        name: "Travel In Style",
-        link: "./",
-    },
-    {
-        name: "Trustworthy Taxi Service",
-        link: "./",
-    },
-    {
-        name: "Dash Transport",
-        link: "./",
+        name: "Restaurante",
+        link: "https://www.tripadvisor.com/FindRestaurants?geo=294456&establishmentTypes=10591%2C11776%2C9900%2C9909&broadened=false",
     },
 ]

@@ -24,7 +24,7 @@ carsArrData.forEach((car, index)=>{
             `<div class="car_card">
                 <div class="car_card_bg"></div>
                 <div class="car_card_header">
-                    <img src="https://purepng.com/public/uploads/large/purepng.com-ferrariferrariferrari-carsferrari-automobilescarssport-1701527480809r62e9.png" alt="">
+                    <img src="../assets/media/img/cars/${car.id}.jpg" alt="">
                 </div>
                 <div class="car_card_body">
                     <div class="car_name">

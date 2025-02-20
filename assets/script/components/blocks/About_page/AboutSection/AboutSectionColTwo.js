@@ -15,7 +15,7 @@ const ColOneContent =
                         </div>
                         <div class="about_section_photos_column_data_text">
                             <div class="about_section_photos_column_data_nr bold_p">${(new Date).getFullYear() - year}+</div>
-                            <div class="about_section_photos_column_data_name bold_p">Years of Experience</div>
+                            <div class="about_section_photos_column_data_name bold_p">Ani de experiență</div>
                         </div>
                     </div>
                 </div>

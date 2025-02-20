@@ -62,9 +62,9 @@ const SectionContent =
             `<div id="car_page_block">
                 <div class="car_page_cotainer content_block ">
                     <div class="car_conteiner_col_1">
-                        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="../assets/media/img/cars/${thisCar.id}.jpg" alt="">
                         <div class="car_text small_p">
-                            Ferrari 365 GTB4 Daytona, a legendary sports car from the late 1960s, exudes timeless elegance and powerful performance. With its sleek and aerodynamic design, the Daytona is a symbol of automotive excellence....
+                            
                         </div>
                     </div>
                     <div class="car_conteiner_col_2">
@@ -84,7 +84,7 @@ const SectionContent =
                                         <sup>$</sup>${price}
                                     </div>
                                     <div class="price_content_time">
-                                        / per hour
+                                        / per oră
                                     </div>
                                 </div>
                                 <div class="price_content">
@@ -92,13 +92,13 @@ const SectionContent =
                                         <sup>$</sup>${price*24}
                                     </div>
                                     <div class="price_content_time">
-                                        / per day
+                                        / per zi
                                     </div>
                                 </div>
                             </div>
 
                             <a href="#car_form_point" class="round_btn capitalise orange_btn">
-                                Book now
+                                Rezervează
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                                 </svg>
@@ -235,9 +235,13 @@ function calcSum(tax, pickupDateTime, dropoffDateTime) {
 // DISPLAY SUM
 calcBtn.addEventListener('click', ()=>{
     if(checkData()){
-        const sum = (calcSum(parseFloat(thisCar.taxPerKm), (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(),  (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime())));
-        console.log(sum);
-        sumP.textContent = `$${sum}`;
+        if((new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime() < new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()) {
+            const sum = (calcSum(parseFloat(thisCar.taxPerKm), (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(),  (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime())));
+            console.log(sum);
+            sumP.textContent = `$${sum}`;
+        } else {
+            window.alert('Bad date request');
+        }
     } else {
         window.alert(badRequest)
     }
@@ -255,28 +259,32 @@ bookBtn.addEventListener('click', async ()=>{
 
     if(isDataValid){
         if(isEmailValid){
-            if(isAvailable){
-                const sum = calcSum(parseFloat(thisCar.taxPerKm), (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(),  (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()));
-                const newBookingRef = push(bookingListRef);
-                set(newBookingRef, {
-                    carId: id,
-                    clientName: nameInput.value,
-                    dropoffDate: dropoffDateInput.value,
-                    dropoffLocation: dropoffLocationInput.value,
-                    dropoffTime: dropoffTimeInput.value,
-                    email: emailInput.value,
-                    message: messageInput.value,
-                    passNr: passNrInput.value,
-                    payingType: typeSelect.value,
-                    phone: phoneInput.value,
-                    pickupDate: pickupDateInput.value,
-                    pickupLocation: pickupLocationInput.value,
-                    pickupTime: pickupTimeInput.value,
-                    sum: sum,
-                });
-                window.alert('Car booked successfully');
+            if((new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime() < new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()) {
+                if(isAvailable){
+                    const sum = calcSum(parseFloat(thisCar.taxPerKm), (new Date (pickupDateInput.value + " " + pickupTimeInput.value)).getTime(),  (new Date(dropoffDateInput.value + " " + dropoffTimeInput.value).getTime()));
+                    const newBookingRef = push(bookingListRef);
+                    set(newBookingRef, {
+                        carId: id,
+                        clientName: nameInput.value,
+                        dropoffDate: dropoffDateInput.value,
+                        dropoffLocation: dropoffLocationInput.value,
+                        dropoffTime: dropoffTimeInput.value,
+                        email: emailInput.value,
+                        message: messageInput.value,
+                        passNr: passNrInput.value,
+                        payingType: typeSelect.value,
+                        phone: phoneInput.value,
+                        pickupDate: pickupDateInput.value,
+                        pickupLocation: pickupLocationInput.value,
+                        pickupTime: pickupTimeInput.value,
+                        sum: sum,
+                    });
+                    window.alert('Car booked successfully');
+                } else {
+                    window.alert(carTaken);
+                }
             } else {
-                window.alert(carTaken);
+                window.alert('Bad date request');
             }
         } else {
             window.alert(badRequest)

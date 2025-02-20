@@ -1,12 +1,12 @@
 export const StatisticsData = {
     barStats: [
         {
-            name: 'Time Awareness',
+            name: 'Rapiditatea serviciilor',
             para: 90,
         },
         {
-            name: 'Driver Experience',
-            para: 95,
+            name: 'Calitatea masinilor',
+            para: 99,
         },
     ],
 

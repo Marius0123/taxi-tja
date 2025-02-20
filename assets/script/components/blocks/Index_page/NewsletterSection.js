@@ -8,13 +8,13 @@ const SectionContent =
                             </div>
                             <div class="sign_for_newsletter_col_2">
                                 <div class="sign_for_newsletter_content">
-                                    <div class="sign_for_newsletter_title">Trustworthy Taxi Service</div>
-                                    <div class="sign_for_newsletter_desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</div>
+                                    <div class="sign_for_newsletter_title">Fii Mereu la Curent!</div>
+                                    <div class="sign_for_newsletter_desc">Abonează-te la newsletter-ul nostru și primește oferte exclusive, noutăți și sfaturi utile direct în inbox!</div>
                                     <div class="sign_for_newsletter_form">
                                         <form action="" id="newsletterForm">
-                                            <input type="email" id="emailInput" class="middle_radius_input grey_input" name="name" id="" placeholder="Email address">
+                                            <input type="email" id="emailInput" class="middle_radius_input grey_input" name="name" id="" placeholder="Adresa de email">
                                             <button type="button" id="submitBtn" class="round_btn black_btn capitalise">
-                                                Subscribe now
+                                                Abonează-te
                                             </button>
                                         </form>
                                     </div>

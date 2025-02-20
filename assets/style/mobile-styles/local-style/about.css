@@ -50,6 +50,7 @@
 
 @media screen and (max-width: 990px) {
     .steps_content{
+        display: flex;
         flex-wrap: wrap;
         gap: 0;
     }
@@ -58,9 +59,11 @@
         margin: 0 0 calc(var(--gap)*1.5);
     }
 
+    
+
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1050px) {
     .testimonials_card_group{
         flex-direction: column;
     }

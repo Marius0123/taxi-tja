@@ -24,7 +24,7 @@ FooterNavData.forEach((e)=>{
 
 const FooterInnerNavContent = 
             `<div class="footer_content_row_two_inner_nav footer_content_row_two_column">
-                <p class="nav_category_title capitalise">Our links</p>
+                <p class="nav_category_title capitalise">PrimeDrive</p>
                 <div class="footer_nav_links_list">
                     ${FooterInnerNavMenuContent}
                 </div>

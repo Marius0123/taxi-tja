@@ -134,7 +134,8 @@
 
 .steps_content {
     padding: var(--gap) 0 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
 }
 
@@ -184,6 +185,12 @@
 
 .steps_card_body .smaller_section_title {
     padding: 0 0 calc(var(--gap)/3);
+}
+
+.steps_card_footer {
+    height: auto;
+    display: flex;
+    align-items: end;
 }
 
 .steps_card_footer .orange_btn {

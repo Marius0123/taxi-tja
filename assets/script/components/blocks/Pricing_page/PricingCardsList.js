@@ -7,7 +7,7 @@ const CardListContent =
     `<section id="pricing">
         <div class="pricing_block">
             <div class="pricing_container">
-                ${pageType == 'index' ? '<div class="pricing_sec_head content_block section_head"> <div class="orange_subtitle">Pricing action</div> <div class="section_title extra_big_p">Time Quick and Easy to Transportation</div></div>' : ''}
+                ${pageType == 'index' ? '<div class="pricing_sec_head content_block section_head"> <div class="orange_subtitle">Tarife</div> <div class="section_title extra_big_p">Pachete adiționale cu tarife accesibile</div></div>' : ''}
                 
                 <div class="princing_wrapper">
                     <div class="content_block">

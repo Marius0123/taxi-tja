@@ -1,18 +1,18 @@
 export const SlidesData = [
     {
         img: './assets/media/img/header-1.jpg',
-        sTitle: 'Grow Your Business',
-        title: 'Ride with Efficient Profession',
-        titleSpan: 'Service',
-        desc: 'Taxi service refers to the transportation of passengers from one location to the another using a hired vehicle. It offers a convenienttransport',
-        link: '/',
+        sTitle: 'Alege PrimeDrive',
+        title: 'I-ați mașina de oriunde',
+        titleSpan: 'acum!',
+        desc: 'PrimeDrive oferă servicii de închiriere auto flexibile și accesibile, adaptate nevoilor tale. Cu o gamă variată de vehicule',
+        link: './pages/our-cars.html',
     },
     {
         img: './assets/media/img/header-2.jpg',
-        sTitle: 'Grow Your Businessssss',
-        title: 'Ride with Efficient Profession',
-        titleSpan: 'Service',
-        desc: 'Taxi service refers to the transportation of passengers from one location to the another using a hired vehicle. It offers a convenienttransport',
-        link: '/',
+        sTitle: 'Ești la un pas de mașina ta',
+        title: 'Nu ezita să îți cauți mașina',
+        titleSpan: 'ta!',
+        desc: 'Fie că ai nevoie de o mașină pentru călătorii de afaceri, vacanțe sau ocazii speciale, îți punem la dispoziție soluții rapide și convenabile.',
+        link: './pages/our-cars.html',
     },
 ];

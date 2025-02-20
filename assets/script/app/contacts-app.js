@@ -23,8 +23,13 @@ submitBtn.addEventListener('click', ()=>{
         const subject = subjectInput.value;
         const content = contentInput.value;
 
+        console.log(name);
+        console.log(email);
+        console.log(subject);
+        console.log(content);
+
         if(email.includes('@') && email.includes('.')){
-            if(name == '' && subject == '' && content == ''){
+            if(!(name == '' && subject == '' && content == '')){
                 try {
                     const newContactsRef = push(contactsListRef);
                     set(newContactsRef, {

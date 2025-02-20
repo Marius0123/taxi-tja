@@ -2,9 +2,9 @@ export const CompanyInfoData = {
     name: 'PrimeDrive.md',
     year: 2011,
     logo: [
-        'https://wpdemo.zcubethemes.com/citylink/wp-content/themes/citylink/inc/assets/images/logo.png',
-        'https://wpdemo.zcubethemes.com/citylink/wp-content/themes/citylink/inc/assets/images/f_logo.png',
+        './assets/media/img/logo/prime1.png',
+        './assets/media/img/logo/prime2.png',
     ],
-    shortDesc: 'Taxi service refers to the transportation of passengers from one location to the another using a hired vehicle. It offers a convenient and reliable mode of transportation, providing door-to-door',
+    shortDesc: 'Oferim servicii de închiriere auto flexibile și accesibile, adaptate nevoilor tale. Cu o gamă variată de vehicule – de la mașini economice și SUV-uri până la modele premium – asigurăm confort, siguranță și prețuri competitive. ',
     keyWords: 'Cars, Moldova, quickly',
 }

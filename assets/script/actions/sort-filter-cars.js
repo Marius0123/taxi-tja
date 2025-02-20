@@ -92,7 +92,7 @@ function loadSelectedCars(){
                 `<div class="car_card">
                     <div class="car_card_bg"></div>
                     <div class="car_card_header">
-                        <img src="https://purepng.com/public/uploads/large/purepng.com-ferrariferrariferrari-carsferrari-automobilescarssport-1701527480809r62e9.png" alt="">
+                        <img src="../assets/media/img/cars/${car.id}.jpg" alt="">
                     </div>
                     <div class="car_card_body">
                         <div class="car_name">
@@ -123,7 +123,7 @@ function loadSelectedCars(){
                     </div>
                     <div class="car_card_footer">
                         <a href="./car.html?id=${index+1}" class="round_btn capitalise orange_btn">
-                            More details
+                            Detalii
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                             </svg>
@@ -253,7 +253,7 @@ main.addEventListener('click', (event)=>{
                     `<div class="car_card">
                         <div class="car_card_bg"></div>
                         <div class="car_card_header">
-                            <img src="https://purepng.com/public/uploads/large/purepng.com-ferrariferrariferrari-carsferrari-automobilescarssport-1701527480809r62e9.png" alt="">
+                            <img src="../assets/media/img/cars/${car.id}.jpg" alt="">
                         </div>
                         <div class="car_card_body">
                             <div class="car_name">
@@ -284,7 +284,7 @@ main.addEventListener('click', (event)=>{
                         </div>
                         <div class="car_card_footer">
                             <a href="./car.html?id=${index+1}" class="round_btn capitalise orange_btn">
-                                More details
+                                Detalii
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
                                 </svg>
