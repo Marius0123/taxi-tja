@@ -3,8 +3,8 @@
 <h2>Principii de lucru</h2>
 <ul>
     <li>Pentru deschiderea proiectului local trebuie să-l deschideți cu Live Server (extensie pentru VS)</li>
-    <li>Link-ul pentru GitHub pages: <a href=""></a></li>
-    <li>Link-ul pentru GitHub: <a href=""></a></li>
+    <li>Link-ul pentru GitHub pages: <a href="https://marius0123.github.io/taxi-tja/">https://marius0123.github.io/taxi-tja/</a></li>
+    <li>Link-ul pentru GitHub (proiectul se află pe <i>master</i> branch): <a href="https://github.com/Marius0123/taxi-tja/tree/master">https://github.com/Marius0123/taxi-tja/tree/master</a></li>
     
 </ul>
 <hr>
